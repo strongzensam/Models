@@ -1,0 +1,26 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+th {
+  padding: 15px;
+}
+td {
+  padding: 15px;
+}
+table {
+  background-image: url("https://s2.graphiq.com/sites/default/files/stories/t4/The_23_Cutest_Dog_Breeds_Youve_Never_Even_Heard_Of_3223_5026.jpg");
+  color: purple;
+  font-weight: bold;
+}
+.btn-default {
+  margin: 12px;
+  background: red;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+}
+h1 {
+  font-weight: bold;
+}

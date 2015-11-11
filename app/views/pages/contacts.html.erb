@@ -1,0 +1,20 @@
+<h1>CONTACTS</h1>
+<button class="btn btn-default" type="submit">Button</button>
+<table border = 1px solid black>
+
+<tr>
+<th>First</th>
+<th>Last</th>
+<th>Email</th>
+<th>Phone</th>
+</tr>
+<% @contacts.each do |contact| %>
+<tr>
+<td><%= contact.first_name %></td>
+<td><%= contact.last_name %></td>
+<td><%= contact.email %></td>
+<td><%= contact.phone_number %></td>
+</tr>
+<% end -%>
+
+</table>
