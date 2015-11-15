@@ -1,20 +1,24 @@
 <h1>CONTACTS</h1>
-<button class="btn btn-default" type="submit">Button</button>
 <table border = 1px solid black>
 
 <tr>
 <th>First</th>
 <th>Last</th>
+<th>Full Name</th>
 <th>Email</th>
 <th>Phone</th>
+<th>Time Created</th>
 </tr>
 <% @contacts.each do |contact| %>
 <tr>
 <td><%= contact.first_name %></td>
 <td><%= contact.last_name %></td>
+<td><%= contact.full_name %></td>
 <td><%= contact.email %></td>
-<td><%= contact.phone_number %></td>
+<td><%= contact.japanese %></td>
+<td><%= contact.friendly_created_at %></td>
 </tr>
 <% end -%>
 
 </table>
+<h1><%= link_to "Add Contact", "/contacts/new", method: :get %></h1>

@@ -1,0 +1,13 @@
+<table>
+<%= form_tag '/contacts', method: :post do %>
+  <tr><td><%= label_tag :first_name, "First Name" %></td>
+  <td><%= text_field_tag :first_name %></td></tr>
+  <tr><td><%= label_tag :last_name, "Last Name" %></td>
+  <td><%= text_field_tag :last_name %></td></tr>
+  <tr><td><%= label_tag :email, "Email" %></td>
+  <td><%= text_field_tag :email %></td></tr>
+  <tr><td><%= label_tag :phone_number, "Phone Number" %></td>
+     <td><%= text_field_tag :phone_number %></td></tr>
+  <%= submit_tag "Add new contact" %>
+<% end %>
+</table>
