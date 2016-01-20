@@ -12,13 +12,15 @@
 </tr>
 <% @contacts.each do |contact| %>
 <tr>
-<td><%= contact.first_name %></td>
+<td><%= link_to contact.first_name, "/contacts/#{contact.id}" %></td>
 <td><%= contact.middle_name %></td>
 <td><%= contact.last_name %></td>
 <td><%= contact.full_name %></td>
 <td><%= contact.email %></td>
 <td><%= contact.japanese %></td>
 <td><%= contact.friendly_created_at %></td>
+<td><%= contact.latitude %></td>
+<td><%= contact.longitude %></td>
 </tr>
 <% end -%>
 

@@ -1,3 +1,12 @@
+  <div>
+    <ul>
+      <% if @new_contact && @new_contact.errors.any? %>
+        <% @new_contact.errors.full_messages.each do |message| %>
+          <li class = "error"><%= message %></li>
+        <% end %>
+      <% end %>
+  </ul>
+</div>
 <table>
 <%= form_tag '/contacts', method: :post do %>
   <tr><td><%= label_tag :first_name, "First Name" %></td>
@@ -8,6 +17,8 @@
   <td><%= text_field_tag :email %></td></tr>
   <tr><td><%= label_tag :phone_number, "Phone Number" %></td>
      <td><%= text_field_tag :phone_number %></td></tr>
+  <tr><td><%= label_tag :address, "Address" %></td>
+  <td><%= text_field_tag :address %></td></tr>
   <%= submit_tag "Add new contact" %>
 <% end %>
 </table>
